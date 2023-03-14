@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="data.js"></script>
+    <script defer src="content.js"></script>
+    <script defer src="app.js"></script>
+
+    <title>Polite email builder</title>
+  </head>
+
+  <body>
+    <header>
+
+    
+
+        <nav>
+
+            <div class="navItem" id="copy">Copy</div>
+            <div class="navItem" id="send">Send</div>
+            <div class="navItem" id="clear">Clear All</div>
+
+        </nav>
+
+      <h1>Polite email builder</h1>
+    </header>
+
+    <main>
+      
+      <div class="emailSection reciver">
+        <label for="To">To :</label>
+        <input type="text" placeholder="example.aaa@gmail.com" id="emailInput" />
+      </div>
+
+      <div class="emailSection topic">
+        <label for="topic">Topic :</label>
+        <input type="text" placeholder="Your Topic" id="topic" />
+      </div>
+
+      <div class="emailSection body">
+        <label for="body">Body :</label>
+
+        <div class="sectionElement greetingsButtons animation" id="grettingsButtons">
+          <div id="grettingBut" class="greetingsButtons">
+            <!-- <div class="contentButton">
+               ex.Grettings
+                </div> -->
+          </div>
+        </div>
+
+        <div class="mobileBorder"></div>
+
+        <div class="sectionElement display animation" id="afterGretting">
+          <div class="inputWidther">
+            <div class="choosenInput">
+              <div class="inputText" id="grettingText"></div>
+
+              <div class="backContent" id="backGretting">
+                <div class="backTop"></div>
+                <div class="backBottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="sectionElement excplicationButtons animation" 
+          id="excplicationButtons"
+        >
+          <!-- <div class="contentButton">
+               ex.I regret to inform you that
+                </div> -->
+        </div>
+        <div class="mobileBorder"></div>
+
+
+
+        <div class="sectionElement display animation" id="afterExplication">
+          <div class="inputWidther">
+            <div class="choosenInput">
+              <div class="inputText" id="explicationText"></div>
+
+              <div class="backContent" id="backExplication">
+                <div class="backTop"></div>
+                <div class="backBottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sectionElement">
+          <!-- <input type="text" placeholder="Your Message" class="bodyInput" id="bodyMessage" /> -->
+          <textarea name="area" class="bodyInput"  id="bodyMessage" cols="30" rows="10" placeholder="Your message"></textarea>
+        </div>
+      </div>
+
+      <div class="emailSection footer">
+        <label for="footer">Footer : </label>
+
+        <div class="sectionElement footerButtons animation" id="footerButtons"></div>
+
+        <div class="mobileBorder"></div>
+
+        <div class="sectionElement display animation" id="afterFooter">
+          <div class="inputWidther">
+            <div class="choosenInput">
+              <div class="inputText" id="footerText"></div>
+
+              <div class="backContent" id="backFooter">
+                <div class="backTop"></div>
+                <div class="backBottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sectionElement farewelButtons animation" id="farewelButtons"></div>
+        <div class="mobileBorder"></div>
+
+        <div class="sectionElement display animation" id="afterFarewel">
+          <div class="inputWidther">
+            <div class="choosenInput">
+              <div class="inputText" id="farewelText"></div>
+
+              <div class="backContent" id="backFarewel">
+                <div class="backTop"></div>
+                <div class="backBottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="text" placeholder="Your sign" id="sign"/>
+      </div>
+    </main>
+
+  </body>
+</html>

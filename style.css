@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #2c2a2d #ffffff;
+    
+  }
+
+  *::-webkit-scrollbar {
+    width: 16px;
+    height: 20px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #EDF2F4;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #2c2a2d;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+:root{
+
+    --backgroundColor : #EDF2F4;
+    --darkBlue : #2B2D42;
+    --gray :  #8D99AE;
+    --red : #EF233C;
+    --darkRed : #D90429;
+}
+
+body{
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    background-color: var(--backgroundColor);
+    color: var(--darkBlue);    
+    font-size: 17px;
+}
+
+header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 6rem;
+    background-color: var(--darkBlue);
+    align-items: center;
+    position: fixed;
+    color: var(--darkRed);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+header nav div{
+    cursor: pointer;
+    
+}
+
+
+.navAnim{
+    animation: navanim 1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+}
+
+.inputAnim{
+    animation: inputAnim 1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+
+}
+
+
+
+header h1{
+    margin-top: 100px;
+}
+
+main{
+    margin: 30px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 87vw;
+    background-color:var(--gray);
+    padding-top: 2rem;
+}
+
+.emailSection{
+    border: 1px solid lightgray;
+    padding: 1rem;
+    background-color: var(--backgroundColor);
+    width: 82vw;
+    margin: 0px auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    font-weight: 700;
+}
+
+input , textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    border: 3px dashed lightgray;
+    padding: 5px;
+    font-size:17px;
+    transition: 0.2s ease-in-out;
+    padding: 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover{
+    border: 3px solid rgba(0, 0, 0, 0.527);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+textarea{
+    resize: none;
+    padding-top: 0.5rem;
+    font-family: 'Golos Text', sans-serif;
+}
+
+
+.sectionElement{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 3px solid lightgray;
+    
+}
+
+.contentButton{
+    border:2px solid var(--darkBlue);
+    background: var(--red);
+    border-radius: 8px ;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+
+}
+
+.plus{
+    background-color: white;
+    border-radius: 50px;
+    width: 20px;
+}
+
+
+
+.contentButton:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: var(--darkRed);
+}
+
+.bodyInput{
+    height: 120px;
+    margin-top: 0;
+
+}
+
+.body div.sectionElement:last-child{
+    border: none;
+    padding-bottom: 5px;
+}
+
+.footerButtons{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.footerButton{
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:45px;
+    
+}
+
+.display{
+    display: none;
+}
+
+.choosenInput{
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.inputWidther{
+    width: 100%;
+
+}
+
+.inputText{
+    font-size: 23px;
+}
+
+.backContent{
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 50px;
+    background-color: var(--gray);
+    
+}
+
+.backTop{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transform: rotate(-0.12turn);
+    
+
+}
+
+.backBottom{
+    margin-top: -4px;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transform: rotate(0.12turn)
+}
+
+
+.backContent:hover{
+    transition: 1s ease-in-out;
+    transform: rotate(2turn);
+}
+
+.animation{
+
+    transition: 0.5s;
+    animation: enabled-anim 0.8s;
+
+}
+
+
+@keyframes enabled-anim {
+    from {
+        opacity: 0;
+        transform: scale(0.7)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+
+@keyframes navanim {
+
+    33%{
+        transform: scale(0.2);
+    }
+
+
+    66%{
+        transform: scale(1.5);
+    }
+
+
+
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+
+@keyframes inputAnim {
+
+    50%{
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }    
+}
+
+
+
+@media(max-width:820px){
+
+    main{
+        width: 95vw;
+    }
+
+ .sectionElement{
+    
+    padding: 1rem 1rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-bottom: none;
+ }
+
+ .footerButton{
+    height: auto;
+ }
+
+ header  nav{
+    padding: 15px;
+    font-size: 20px;
+ }
+
+ .mobileBorder{
+    border-bottom: 3px solid lightgray;
+ }
+
+ h1{
+    font-size: 30px;
+    
+ }
+
+ header h1{
+    margin-top: 80px;
+ }
+
+ .contentButton{
+    justify-content: space-between;
+    padding: 10px;
+    
+ }
+}
+
+
